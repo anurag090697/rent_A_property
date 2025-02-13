@@ -15,14 +15,17 @@ function PropertyCard({ data }) {
 
   useEffect(() => {
     let tm = false;
-    likedProperties.map((ele) => {
-      if (ele.name == data.name) {
-        tm = true;
-      }
-    });
+    if (likedProperties.length) {
+      likedProperties.map((ele) => {
+        if (ele.name == data.name) {
+          tm = true;
+        }
+      });
+    }
+
     setLike((prev) => tm);
     // console.log(like);
-  }, [likedProperties,like]);
+  }, [likedProperties, like]);
 
   const changeLike = () => {
     let temp = [];

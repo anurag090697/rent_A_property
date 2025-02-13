@@ -45,7 +45,7 @@ The application is deployed on Vercel.
 
 ## Screenshot
 
-![Rent A Property Screenshot](https://via.placeholder.com/1024x600?text=Rent+A+Property+Screenshot)
+![Rent A Property Screenshot](<https://github.com/anurag090697/rent_A_property/blob/main/src/assets/Screenshot%20(19).png?raw=true>)
 
 ## License
 
