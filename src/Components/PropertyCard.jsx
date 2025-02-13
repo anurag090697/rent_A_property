@@ -22,7 +22,7 @@ function PropertyCard({ data }) {
     });
     setLike((prev) => tm);
     // console.log(like);
-  });
+  }, [likedProperties,like]);
 
   const changeLike = () => {
     let temp = [];
@@ -33,7 +33,9 @@ function PropertyCard({ data }) {
       setLikedProperties((prev) => temp);
       setLike(false);
     } else {
-      setLikedProperties((prev) => [...prev, data]);
+      let tm = [...likedProperties, data];
+      // tm.push(data);
+      setLikedProperties((prev) => tm);
       setLike(true);
     }
     // console.log(temp);

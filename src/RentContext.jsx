@@ -27,6 +27,7 @@ function RentContextProvider({ children }) {
   useEffect(() => {
     let tm = JSON.stringify(likedProperties);
     localStorage.setItem("likedProperties", tm);
+    // console.log(likedProperties);
   }, [likedProperties]);
 
   return (
