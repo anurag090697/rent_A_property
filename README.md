@@ -61,5 +61,3 @@ This project is licensed under the [MIT License](LICENSE).
 Contributions and suggestions are always welcome!
 
 ```
-
-```

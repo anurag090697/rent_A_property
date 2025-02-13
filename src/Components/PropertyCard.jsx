@@ -15,7 +15,7 @@ function PropertyCard({ data }) {
 
   useEffect(() => {
     let tm = false;
-    if (likedProperties.length) {
+    if (likedProperties && likedProperties.length) {
       likedProperties.map((ele) => {
         if (ele.name == data.name) {
           tm = true;
