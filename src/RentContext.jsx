@@ -19,9 +19,11 @@ function RentContextProvider({ children }) {
   //   console.log(searchQuery);
   useEffect(() => {
     let temp = localStorage.getItem("likedProperties");
-    //   console.log(JSON.parse(temp));
+    // console.log(JSON.parse(temp).length);
     let lk = JSON.parse(temp);
-    setLikedProperties(lk);
+    if (lk.length) {
+      setLikedProperties(lk);
+    }
   }, []);
 
   useEffect(() => {

@@ -25,7 +25,7 @@ function PropertyCard({ data }) {
 
     setLike((prev) => tm);
     // console.log(like);
-  }, [likedProperties, like]);
+  }, [likedProperties, like, data]);
 
   const changeLike = () => {
     let temp = [];
