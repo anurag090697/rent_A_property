@@ -21,7 +21,7 @@ function RentContextProvider({ children }) {
     let temp = localStorage.getItem("likedProperties");
     // console.log(JSON.parse(temp).length);
     let lk = JSON.parse(temp);
-    if (lk.length) {
+    if (lk && lk.length) {
       setLikedProperties(lk);
     }
   }, []);
